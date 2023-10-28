@@ -13,7 +13,7 @@ public class Main {
         int seq = 0;
         TextFormat font = new TextFormat();
         font.setFontSize(50);
-        font.setFontName("Arial");
+        font.setFontName("Arial", "xd");
         font.setTextOrigin(TextOrigin.CENTER);
         font.setBold(true);
         window.setTextFormat(font);
@@ -187,6 +187,7 @@ public class Main {
     {
         BufferedReader rr;
         String pp = System.getProperty("user.dir");
+        System.out.println(pp + "folder of record file");
         File rec = new File(pp+"\\record.txt");
         try{
             if(rec.createNewFile())
